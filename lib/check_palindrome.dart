@@ -3,12 +3,13 @@ bool isPalindrome(String input) {
   return input == input.split('').reversed.join('');
 }
 
-bool istPalindrom(String text) {
+bool isPalindrom(String text) {
   String wordReversed = text.split('').reversed.join('');
   return text == wordReversed;
 }
 
-void main() {
-  print(istPalindrom('otto'));  
-  print(istPalindrom('palindrom'));  
+bool istPalindrom(String text) {
+  if (text.length <= 1) return true;
+  if (text[0] != text[text.length - 1]) return false;
+  return istPalindrom(text.substring(1, text.length - 1));
 }
