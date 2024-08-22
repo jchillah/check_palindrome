@@ -5,5 +5,7 @@ void main() {
   print(isPalindrom('otto'));  
   print(isPalindrom('palindrom'));
   print(istPalindrom('anna'));
-  print(istPalindrom('hello')); 
+  print(istPalindrom('hello'));
+  print(istPalindrome('rentner'));
+  print(istPalindrome('flutter'));
 }
