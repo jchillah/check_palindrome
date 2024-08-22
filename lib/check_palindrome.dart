@@ -13,3 +13,13 @@ bool istPalindrom(String text) {
   if (text[0] != text[text.length - 1]) return false;
   return istPalindrom(text.substring(1, text.length - 1));
 }
+
+bool istPalindrome(String text) {
+  int len = text.length;
+  for (int i = 0; i < len ~/ 2; i++) {
+    if (text[i] != text[len - i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
